@@ -12,6 +12,7 @@ I am **20** years of age and in my **Second Year** Of College
 ## What I believe in
 I believe that hardwork pays off.
 I believe everything ispossible through God.
+Be better than your excuses
 
 ## Educational Background
 I finish Highschool in **Sto Domingo Integrated School**.
