@@ -1,1 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio - Moses Bondoc</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <header>
+    <h1>My Portfolio</h1>
+    <p>The world of speed, technology, and adrenaline</p>
+  </header>
+
+  <!-- Responsive Navbar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">Moses Bondoc</div>
+      <div class="menu-toggle" onclick="toggleMenu()">
+        ☰
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#history">History</a></li>
+        <li><a href="#drivers">Hobbies</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    <button class="btn-toggle" onclick="toggleTheme()">Toggle Light/Dark Mode</button>
+
+    <section id="history" class="hero">
+      <h2>History of Moses!</h2>
+      <p>Moses Fidel Santos Bondoc is from Angeles City In Pampanga...</p>
+      <p>Currently 20 Years Old.</p>
+      <P>Born In San Fernando City. </P>
+      <P>He's A Very Hardworking Person Passionates towards his dreams  </P>
+      <img src="doc2-removebg-preview.png" alt="Moses Bondoc" />
+    </section>
+
+    <section id="drivers" class="card">
+      <h2>Hobbies</h2>
+
+      <h3>Driving</h3>
+      <p>Motorcycling is one of his hobbies loves to stroll around town and see the sights</p>
+      <p>He also loves to drives cars and a fan of motogp and f1...</p>
+      <img src="Motorcycling.jpg" alt="Motorcycling" height="250" width="300"/>
+      
+
+      <h3>Gaming</h3>
+      <p>He enjoys a wide range of video games...</p>
+      <p>Variety of online and offline games..pokemon, mlbb, and many more!</p>
+      <img src="" alt="Gaming" class="odd" height="250" width="300"/>
+      
+
+      <h3>Fan Of Pop Culture</h3>
+      <p>He enjoys watching disney pixar movies ranging from cars, toy story and many more</p>
+      <p>He also watches anime, marvel movies and and many more.. </p>
+      <img src="" alt="Gaming" class="odd" height="250" width="300"/>
+    </section>
+
+    <section id="skills" class="card">
+      <h2>Skills and Achievements</h2>
+      <p>Graduated Elementary at Sto Rosario Elementary School (2016)</p>
+      <p>Graduated High School at Sto Domingo Integrated School (2020)</p>
+      <p>Graduated Senior High at Sto Domingo Integrated School (2023)</p>
+      <p>Currently a Sophomore student at City College of Angeles (Ongoing)</p>
+    </section>
+
+    <section id="projects" class="card project-section">
+      <h2>Projects</h2>
+      <div class="project-cards">
+        <div class="project-card">
+          <h3>Portfolio Website</h3>
+          <p>Built using HTML, CSS, and JS. Showcases my personal and academic journey.</p>
+        </div>
+        <div class="project-card">
+          <h3>Lab Task 1!</h3>
+          <a href="file:///C:/Users/HP%20Elitebook/Downloads/OOP%20ACT2%20%20Moses%20(2).pdf">
+          <img src="escapesequence.png" alt="Lab Task 1 Screenshot" />
+        </a>
+        </div>
+        <div class="project-card">
+          <h3>Lab Task 2!</h3>
+          <a href="Doc_2.pdf">
+          <img src="python-function-1-1024x597.png" alt="Lab Task 2 Screenshot" />
+        </a>
+        </div>
+        <div class="project-card">
+          <h3>Lab Task 3!</h3>
+          <a href="lab task 3.pdf">
+          <img src="python-lists.png" alt="Lab Task 3 Screenshot" />
+        </a>
+        </div>
+        <div class="project-card">
+          <h3>Lab Task 4!</h3>
+          <a href="bondoc (1).pdf">
+          <img src="dictionary-in-python.png" alt="Lab Task 4 Screenshot" />
+          </a>
+        </div>
+        <div class="project-card">
+          <h3>Lab Task 5!</h3>
+          <a href="Document 3 (1).pdf">
+           <img src="Classes-and-objects-in-python-1.jpg.png" alt="Lab Task 4 Screenshot" />
+          </a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <button onclick="scrollToTop()" id="scrollTopBtn" title="Go to top">↑</button>
+
+  <footer>
+    <p>&copy; 2025 MotoTech - Formula 1 Fan Site</p>
+  </footer>
+
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle("light");
+    }
+
+    function toggleMenu() {
+      const navLinks = document.getElementById("navLinks");
+      navLinks.classList.toggle("show");
+    }
+
+    // Scroll to top
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+    // Show/hide scroll-to-top button
+    window.onscroll = function () {
+      const btn = document.getElementById("scrollTopBtn");
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        btn.style.display = "block";
+      } else {
+        btn.style.display = "none";
+      }
+    };
+  </script>
+</body>
+</html>
 
